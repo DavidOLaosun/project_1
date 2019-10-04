@@ -70,8 +70,11 @@ function printQuote(){
 
 if($aQuote['citation'] !='' ||$aQuote['source'] !='' ||$aQuote['tag'] !=''){
 
-$quoteOutput="<p class='quote'>" . $aQuote=['quote'] . "</p>;
-$quoteOutput="<p class='source'>" . $aQuote=
+$quoteOutput="<p class='quote'>" .$aQuote=['quote'] . "</p>;
+$quoteOutput.="<p class='source'>" . $aQuote=['source'];
+$quoteOutput.="<p class='citation'>" .$aQuote=['citation'] . 
+
+
 
 
 
