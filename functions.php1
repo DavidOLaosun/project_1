@@ -2,7 +2,7 @@
 // PHP - Random Quote Generator
 //Multidimensional array for quote elements
 //Inner associative array elements
-  $quotes[] = [
+
 
 $quotes[]= [
 
@@ -16,7 +16,7 @@ $quotes[]= [
 $quotes[]= [
   
   'quote'=>"Focusing on the negative only makes a difficult journey more difficult.",
-  'source'=>"TobyMac"
+  'source'=>"TobyMac",
   'citation'=>"AZ Quotes",
   'tag'=>"Gospel Singer",
 
@@ -53,7 +53,7 @@ $quotes[]= [
 
 function getRandomQuote($array){
 
-  $randomNum=rand(0,24);
+  $randomNum=rand(0,20);
   //Passing on the randomly selected inner associative array 
 
   return $array[$randomNum];
@@ -71,8 +71,8 @@ function printQuote(){
 if($aQuote['citation'] !='' ||$aQuote['source'] !='' ||$aQuote['tag'] !=''){
 
 $quoteOutput="<p class='quote'>" .$aQuote=['quote'] . "</p>;
-$quoteOutput.="<p class='source'>" . $aQuote=['source'];
-$quoteOutput.="<p class='citation'>" .$aQuote=['citation'] . 
+$quoteOutput.="<p class='source'>" . $aQuote=['source']; "</p>
+$quoteOutput.="<p class='citation'>" .$aQuote=['citation'] "</p>; 
 
 
 
